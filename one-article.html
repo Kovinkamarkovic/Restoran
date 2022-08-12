@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Prodaja</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic,400italic,500,500italic,700,700italic,900,900italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+
+<script>
+  $(function() {
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 1000);
+          return false;
+        }
+      }
+    });
+  });
+</script>
+
+<script>
+$(document).ready(function() {
+		
+	var respmenu 		= $('#respmenu');
+	var	menu 			= $('#nav>ul');
+
+	$(respmenu).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var sirina = $(window).width();
+		if(sirina > 768 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}	
+	});
+	
+});	
+	
+
+
+</script>
+</head>
+<body class="not-front">
+
+<div id="wrapper">
+	
+	<header id="header" class="cf">
+	
+		<div id="logo">
+			<a href="index.php">
+				<img src="images/logo.jpg" alt=""style="width:80px">
+			</a>
+		</div><!-- end #logo -->
+		<nav id="nav">
+			<ul>
+				<li><a href="index.php">početna</a></li>
+				<li><a href="onama.html">o nama</a></li>
+				<li><a href="kontakt.html">kontakt</a></li>
+				<li><a href="novosti.html">novosti</a></li>
+				<li><a href="katalog.php">Galerije</a></li>
+			</ul>
+			<a href="#" id="respmenu" class="button"><i class="fa fa-lg fa-navicon"></i>&nbsp;&nbsp;&nbsp;&nbsp;Navigation</a>
+		</nav><!-- end #nav -->
+	</header><!-- end #header -->
+	<section id="central">
+    	<div class="wrapper">
+        
+        	<main id="main">
+
+   
+                    <h1>Lorem ipsum dolor sit amet</h1>
+                    <p></p>
+                  
+                	<img src="http://placehold.it/800x400&text=News">
+                    
+                    <p>&nbsp;</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, et, reprehenderit magnam exercitationem iure repellendus quisquam. Perferendis, aliquid, velit, ab corporis ex repellat distinctio eos vero nobis nesciunt labore laboriosam culpa adipisci perspiciatis suscipit quidem mollitia dolor accusamus unde ullam. Architecto, magnam voluptas placeat harum velit earum. Nisi, nulla, ratione esse quaerat molestias quis maiores praesentium ipsa possimus quod voluptatum sequi vero accusantium necessitatibus dolor quos et neque ullam adipisci molestiae dolorum. Maiores, unde, aspernatur tenetur minima culpa perferendis quo. Dolorem, illo, rerum dolorum libero incidunt fugiat quam nisi ab ipsam quidem aliquid corporis a. Aspernatur repudiandae cumque veniam ducimus!</p>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque deserunt at consequatur illo. Deleniti, velit, explicabo, consectetur corporis ex vel aspernatur debitis libero ut quidem dolorum ducimus incidunt odio perferendis nostrum. Reprehenderit, ipsa, nobis, mollitia, modi explicabo optio dolores necessitatibus maxime delectus provident dignissimos quidem suscipit saepe odit veniam quos aperiam! Eius, expedita, quam optio laboriosam iusto ratione iure aut tempora illo vel possimus non natus eum fugit dolor quaerat unde praesentium nobis delectus similique deleniti repellendus quod sequi perferendis molestias nemo dicta a maiores dolore accusantium sit assumenda rerum reprehenderit qui quidem molestiae cumque distinctio cum autem laborum corporis quas magnam in doloremque quo odit! Harum, vel, voluptates, facilis accusamus mollitia blanditiis eaque ea temporibus consequuntur dolores itaque libero neque modi. Excepturi, ad, aliquid, cum consequatur ab cumque voluptatem laborum similique provident maxime possimus aliquam explicabo quisquam rerum repellendus ut facilis maiores iusto blanditiis accusantium voluptas! Nihil, nobis, quas, consectetur inventore neque obcaecati adipisci necessitatibus illo sit repellat quo id reiciendis explicabo praesentium officia culpa veritatis autem voluptate odit accusantium! Dolores, consequuntur doloremque non ducimus eum quam eaque aut doloribus! Deserunt dolorum quaerat eius esse placeat. Cupiditate, aut, officia est aliquam quidem sit qui repellat rem minus cum. Magni, voluptatum, vero repellat dolor debitis tempore libero ratione illum alias cupiditate tenetur velit possimus reiciendis! Sed, velit aspernatur accusantium cupiditate commodi error iusto! Quisquam, officiis, tempora, debitis mollitia atque corrupti ex asperiores ea nisi voluptatem laudantium assumenda possimus dolor fuga.</p>
+
+            </main>
+            
+            <aside id="sidebar">
+            	<h2>Other news</h2>
+                
+                
+                
+                
+				<article class="article">
+                	
+                    
+                    
+                    	<h3><a href="one-article.html">Lorem ipsum dolor sit amet</a></h3>
+                        <p></p>
+                   
+                	<a href="one-article.html"><img src="http://placehold.it/340x240&text=News"></a>
+                    
+                	<p><a href="one-article.html" class="button">Read whole article &raquo;</a></p>
+                </article>
+                
+				<article class="article">
+                	
+                    
+                    
+                    	<h3><a href="one-article.html">Lorem ipsum dolor sit amet</a></h3>
+                        <p></p>
+                   
+                	<a href="one-article.html"><img src="http://placehold.it/340x240&text=News"></a>
+                    
+                	<p><a href="one-article.html" class="button">Read whole article &raquo;</a></p>
+                </article>
+				
+                
+                
+            </aside>
+        
+            
+        </div>
+    </section>
+    
+    
+    
+    <footer id="footer" class="negative">
+    	<div class="wrapper">
+    		
+            <div class="footerBlock">
+            	<h3>Consectetur adipisi</h3>
+            	<p class="bold">Lorem ipsum dolor consectetur adipisicing elit. Doloribus.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, optio, dolore, quibusdam molestiae voluptate cupiditate hic itaque mollitia deserunt maxime assumenda beatae illo delectus earum nisi voluptatibus iure dolor minima culpa enim expedita voluptas quod quis quia iste harum ducimus magni ad ipsam modi.</p>
+            </div>
+            <div class="footerBlock">
+            	<h3>Delectus earum nisi</h3>
+            	<p class="bold">Natus, excepturi, suscipit, voluptates quam veniam repudiandae nemo debitis qui illum</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, optio, dolore, quibusdam molestiae voluptate cupiditate hic itaque mollitia deserunt maxime assumenda beatae illo delectus earum nisi voluptatibus iure dolor minima culpa enim expedita voluptas quod quis quia iste harum ducimus magni ad ipsam modi.</p>
+            </div>
+            
+            <div class="footerBlockR">
+            </div>
+            
+    	</div>
+        <div id="footerCopyright">
+			<p>Copyright @ prodaja</p>
+			<a href="#top" class="button">back to top</a>
+		</div>
+    </footer>
+</body>
+</html>
+	
